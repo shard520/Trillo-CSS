@@ -131,15 +131,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .user-nav__user-photo {
-    height: 3.75rem;
-    border-radius: 50%;
-    margin-right: 1rem; }
-  .user-nav__user-menu {
+  .user-nav__message-popup {
     position: absolute;
     top: 7rem;
-    right: -.1rem;
-    width: 18rem;
+    right: 0;
+    width: 40rem;
+    color: var(--color-grey-light-1);
+    cursor: default; }
+  .user-nav__message-popup, .user-nav__user-menu {
     background-color: var(--color-grey-dark-1);
     box-shadow: var(--shadow-dark);
     z-index: 100;
@@ -149,15 +148,93 @@ body {
     transform: scaleY(0);
     transform-origin: top; }
     @media only screen and (max-width: 31.25em) {
-      .user-nav__user-menu {
+      .user-nav__message-popup, .user-nav__user-menu {
         top: 5.5rem; } }
   .user-nav__user:hover .user-nav__user-menu,
-  .user-nav__user:focus .user-nav__user-menu {
+  .user-nav__user:focus .user-nav__user-menu,
+  .user-nav__messages:hover .user-nav__message-popup,
+  .user-nav__messages:focus .user-nav__message-popup {
     opacity: 1;
     visibility: visible;
     transform: scaleY(1); }
-  .user-nav__user:focus {
+  .user-nav__user:focus, .user-nav__messages:focus {
     outline: none; }
+  .user-nav__message-header {
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: -1rem; }
+  .user-nav__message-inbox {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .2rem; }
+  .user-nav__message-list {
+    list-style: none; }
+  .user-nav__message-preview {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    box-shadow: inset -1rem -2rem 4rem 0.5rem rgba(250, 249, 249, 0.05);
+    border-bottom: 0.2rem solid var(--color-grey-dark-3); }
+    .user-nav__message-preview:hover {
+      box-shadow: inset 1rem 2rem 4rem 0.5rem rgba(250, 249, 249, 0.05); }
+  .user-nav__message-sender, .user-nav__message-sender--online {
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.3rem solid var(--color-grey-light-1);
+    margin-right: 1.5rem; }
+    .user-nav__message-sender--online, .user-nav__message-sender--online--online {
+      border-color: var(--color-primary); }
+  .user-nav__message-box {
+    display: flex;
+    flex-direction: column; }
+  .user-nav__message-username {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center; }
+    .user-nav__message-username--unread {
+      color: var(--color-primary); }
+  .user-nav__message-unread-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    fill: var(--color-primary);
+    margin-bottom: -.15rem; }
+  .user-nav__message-contents, .user-nav__message-contents--unread {
+    font-size: 1.1rem;
+    font-weight: 300;
+    overflow: hidden;
+    width: 25rem;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .user-nav__message-contents--unread, .user-nav__message-contents--unread--unread {
+      font-style: italic; }
+  .user-nav__message-delete {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-grey-dark-3);
+    margin-left: 1.5rem; }
+    .user-nav__message-delete:hover {
+      fill: var(--color-grey-dark-2); }
+  .user-nav__message-footer {
+    padding: 1rem;
+    text-align: center; }
+  .user-nav__message-more {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+    cursor: pointer; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .user-nav__user-menu {
+    position: absolute;
+    top: 7rem;
+    right: -.1rem;
+    width: 18rem; }
   .user-nav__user-menu-list {
     list-style: none;
     width: 100%; }
