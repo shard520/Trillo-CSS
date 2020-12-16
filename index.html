@@ -15,24 +15,26 @@
             <header class="header">
                 <img src="./img/logo.png" alt="Trillo Logo" class="logo">
 
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
+                <form action="#" class="search" autocomplete="off">
+                    <div class="autocomplete">
+                        <input type="text" class="search__input" placeholder="Search hotels" id="hotelSearch" tabindex="1">
+                        <button class="search__button">
+                            <svg class="search__icon">
+                                <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
 
                 <nav class="user-nav">
-                    <div class="user-nav__icon-box">
+                    <div class="user-nav__icon-box" tabindex="2">
                         <svg class="user-nav__icon">
                             <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
                         </svg>
                         <span class="user-nav__notification">7</span>
                     </div>
 
-                    <div class="user-nav__icon-box user-nav__messages" tabindex="0">
+                    <div class="user-nav__icon-box user-nav__messages" tabindex="3">
                         <svg class="user-nav__icon">
                             <use xlink:href="./img/sprite.svg#icon-chat"></use>
                         </svg>
@@ -118,7 +120,7 @@
                         </div>
                     </div>
 
-                    <div class="user-nav__user" tabindex="0">
+                    <div class="user-nav__user" tabindex="4">
                         <img src="./img/user.jpg" alt="User photo" class="user-nav__user-photo">
                         <span class="user-nav__user-name">Jonas</span>
                         <div class="user-nav__user-menu">
@@ -365,4 +367,6 @@
                 <br>Design copyright &copy; <a href="https://twitter.com/jonasschmedtman" class="footer-legal__link" target="_blank">Jonas Schmedtmann</a>.
         </footer>
     </body>
+
+    <script src="./js/autocomplete.js"></script>
 </html>
