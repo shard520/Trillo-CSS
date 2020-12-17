@@ -13,7 +13,11 @@
     <body>
         <div class="container">
             <header class="header">
-                <img src="./img/logo.png" alt="Trillo Logo" class="logo">
+                <img srcset="./img/logo-sm.png 75w, ./img/logo.png 153w"
+                     sizes="8vw"
+                     src="./img/logo.png" 
+                     alt="Trillo Logo" 
+                     class="logo">
 
                 <form action="#" class="search" autocomplete="off">
                     <div class="autocomplete">
@@ -47,7 +51,11 @@
 
                             <ul class="user-nav_message-list">
                                 <li class="user-nav__message-preview">
-                                    <img src="./img/user-3.jpg" alt="Message sender picture" class="user-nav__message-sender">
+                                    <img srcset="./img/user-3-sm.jpg 64w, ./img/user-3.jpg 128w" 
+                                         sizes="10vw" 
+                                         src="./img/user-3.jpg" 
+                                         alt="Message sender picture" 
+                                         class="user-nav__message-sender">
                                     <div class="user-nav__message-box">
                                         <p class="user-nav__message-username">
                                             <span class="user-nav__message-username--unread">
@@ -64,7 +72,11 @@
                                     </svg>
                                 </li>
                                 <li class="user-nav__message-preview">
-                                    <img src="./img/user-6.jpg" alt="Message sender picture" class="user-nav__message-sender--online">
+                                    <img srcset="./img/user-6-sm.jpg 64w, ./img/user-6.jpg 128w" 
+                                         sizes="10vw" 
+                                         src="./img/user-6.jpg" 
+                                         alt="Message sender picture" 
+                                         class="user-nav__message-sender--online">
                                     <div class="user-nav__message-box">
                                         <p class="user-nav__message-username">Alison Goodman</p>
                                         <p class="user-nav__message-contents">Hey, did you remember to book the car?</p>
@@ -74,7 +86,11 @@
                                     </svg>
                                 </li>
                                 <li class="user-nav__message-preview">
-                                    <img src="./img/user-5.jpg" alt="Message sender picture" class="user-nav__message-sender">
+                                    <img srcset="./img/user-5-sm.jpg 64w, ./img/user-5.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-5.jpg" 
+                                         alt="Message sender picture" 
+                                         class="user-nav__message-sender">
                                     <div class="user-nav__message-box">
                                         <p class="user-nav__message-username">Bob Westfield</p>
                                         <p class="user-nav__message-contents">Jonas, just heard back from the place we're thinking of for May, they can't do single rooms so they've upgraded us all to doubles... result!!</p>
@@ -84,7 +100,11 @@
                                     </svg>
                                 </li>
                                 <li class="user-nav__message-preview">
-                                    <img src="./img/user-4.jpg" alt="Message sender picture" class="user-nav__message-sender--online">
+                                    <img srcset="./img/user-4-sm.jpg 64w, ./img/user-4.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-4.jpg" 
+                                         alt="Message sender picture" 
+                                         class="user-nav__message-sender--online">
                                     <div class="user-nav__message-box">
                                         <p class="user-nav__message-username">
                                             <span class="user-nav__message-username--unread">
@@ -101,7 +121,11 @@
                                     </svg>
                                 </li>
                                 <li class="user-nav__message-preview">
-                                    <img src="./img/user-2.jpg" alt="Message sender picture" class="user-nav__message-sender--online">
+                                    <img srcset="./img/user-2-sm.jpg 64w, ./img/user-2.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-2.jpg" 
+                                         alt="Message sender picture" 
+                                         class="user-nav__message-sender--online">
                                     <div class="user-nav__message-box">
                                         <p class="user-nav__message-username">Mary Thomas</p>
                                         <p class="user-nav__message-contents">So looking forward to going back to HLP, I had such a fun time there last year, you picked a good one!</p>
@@ -121,7 +145,11 @@
                     </div>
 
                     <div class="user-nav__user" tabindex="4">
-                        <img src="./img/user.jpg" alt="User photo" class="user-nav__user-photo">
+                        <img srcset="./img/user-sm.jpg 200w, ./img/user.jpg 400w"
+                             sizes="7vw"
+                             src="./img/user.jpg"
+                             alt="User photo" 
+                             class="user-nav__user-photo">
                         <span class="user-nav__user-name">Jonas</span>
                         <div class="user-nav__user-menu">
                             <ul class="user-nav__user-menu-list">
@@ -224,19 +252,31 @@
                 <main class="hotel-view">
                     <div class="gallery">
                         <figure class="gallery__item">
-                            <img src="./img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
+                            <img srcset="./img/hotel-1-sm.jpg 500w, ./img/hotel-1-md.jpg 1000w, ./img/hotel-1-lg.jpg 1500w" 
+                                 sizes="33.333vw"
+                                 src="./img/hotel-1-md.jpg" 
+                                 alt="Photo of hotel 1" 
+                                 class="gallery__photo">
                             <figcaption class="gallery__caption">
                                 Relax with a cocktail in our luxurious spa pool
                             </figcaption>
                         </figure>
                         <figure class="gallery__item">
-                            <img src="./img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
+                            <img srcset="./img/hotel-2-sm.jpg 500w, ./img/hotel-2-md.jpg 1000w, ./img/hotel-2-lg.jpg 1500w" 
+                                 sizes="33.333vw"
+                                 src="./img/hotel-2-md.jpg" 
+                                 alt="Photo of hotel 2" 
+                                 class="gallery__photo">
                             <figcaption class="gallery__caption">
                                 Workout with some lengths in our sports pool
                             </figcaption>
                         </figure>
                         <figure class="gallery__item">
-                            <img src="./img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
+                            <img srcset="./img/hotel-3-sm.jpg 500w, ./img/hotel-3-md.jpg 1000w, ./img/hotel-3-lg.jpg 1500w" 
+                                 sizes="33.333vw"
+                                 src="./img/hotel-3-md.jpg" 
+                                 alt="Photo of hotel 3" 
+                                 class="gallery__photo">
                             <figcaption class="gallery__caption">
                                 Gaze across the bay in our cliff-top terrace
                             </figcaption>
@@ -306,10 +346,26 @@
                                 </p>
 
                                 <div class="recommend__friends">
-                                    <img src="./img/user-3.jpg" alt="Friend 1" class="recommend__photo">
-                                    <img src="./img/user-4.jpg" alt="Friend 2" class="recommend__photo">
-                                    <img src="./img/user-5.jpg" alt="Friend 3" class="recommend__photo">
-                                    <img src="./img/user-6.jpg" alt="Friend 4" class="recommend__photo">
+                                    <img srcset="./img/user-3-sm.jpg 64w, ./img/user-3.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-3.jpg" 
+                                         alt="Friend 1
+                                         " class="recommend__photo">
+                                    <img srcset="./img/user-4-sm.jpg 64w, ./img/user-4.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-4.jpg" 
+                                         alt="Friend 2
+                                         " class="recommend__photo">
+                                    <img srcset="./img/user-5-sm.jpg 64w, ./img/user-5.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-5.jpg" 
+                                         alt="Friend 3
+                                         " class="recommend__photo">
+                                    <img srcset="./img/user-6-sm.jpg 64w, ./img/user-6.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-6.jpg" 
+                                         alt="Friend 4
+                                         " class="recommend__photo">
                                 </div>
                             </div>
                         </div>
@@ -320,7 +376,11 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
                                 </blockquote>
                                 <figcaption class="review__user">
-                                    <img src="./img/user-1.jpg" alt="User 1" class="review__photo">
+                                    <img srcset="./img/user-1-sm.jpg 64w, ./img/user-1.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-1.jpg" 
+                                         alt="User 1" 
+                                         class="review__photo">
                                     <div class="review__user-box">
                                         <p class="review__user-name">Nick Smith</p>
                                         <p class="review__user-date">Dec 08 2020</p>
@@ -333,7 +393,11 @@
                                 <blockquote class="review__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.                                    </blockquote>
                                 <figcaption class="review__user">
-                                    <img src="./img/user-2.jpg" alt="User 2" class="review__photo">
+                                    <img srcset="./img/user-2-sm.jpg 64w, ./img/user-2.jpg 128w" 
+                                         sizes="10vw"
+                                         src="./img/user-2.jpg" 
+                                         alt="User 2" 
+                                         class="review__photo">
                                     <div class="review__user-box">
                                         <p class="review__user-name">Mary Thomas</p>
                                         <p class="review__user-date">Dec 01 2020</p>
